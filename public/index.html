@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>MyChat - Simple Messaging App</title>
+  <meta name="description" content="MyChat is a simple real-time messaging app for chatting, finding users and staying connected.">
+  <meta name="keywords" content="MyChat, messaging app, chat app, MyChat app">
+
+  <meta property="og:title" content="MyChat">
+  <meta property="og:description" content="Simple, fast and modern messaging app.">
+  <meta property="og:type" content="website">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b0f19;
+      color: #ffffff;
+      min-height: 100vh;
+    }
+
+    .container {
+      width: min(1100px, 92%);
+      margin: auto;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 0;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: 800;
+    }
+
+    .logo span {
+      color: #5b8cff;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 90px 0 70px;
+    }
+
+    .hero h1 {
+      font-size: clamp(48px, 10vw, 86px);
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      color: #5b8cff;
+    }
+
+    .hero p {
+      max-width: 650px;
+      margin: auto;
+      color: #aeb7c9;
+      font-size: 19px;
+      line-height: 1.7;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 32px;
+      padding: 15px 28px;
+      background: #5b8cff;
+      color: white;
+      text-decoration: none;
+      border-radius: 12px;
+      font-weight: 700;
+    }
+
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+      padding: 30px 0 80px;
+    }
+
+    .card {
+      background: #141a27;
+      border: 1px solid #222b3d;
+      border-radius: 18px;
+      padding: 25px;
+    }
+
+    .card h3 {
+      margin: 12px 0;
+    }
+
+    .card p {
+      color: #9da8bb;
+      line-height: 1.6;
+    }
+
+    .icon {
+      font-size: 32px;
+    }
+
+    footer {
+      border-top: 1px solid #222b3d;
+      padding: 30px 0;
+      text-align: center;
+      color: #7f8a9d;
+    }
+
+    @media (max-width: 600px) {
+      .hero {
+        padding-top: 60px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <nav>
+      <div class="logo">My<span>Chat</span></div>
+    </nav>
+
+    <section class="hero">
+      <h1>Welcome to <span>MyChat</span></h1>
+
+      <p>
+        Simple, fast and modern messaging.
+        Find users, send real-time messages and stay connected with MyChat.
+      </p>
+
+      <a class="button" href="#features">Explore MyChat</a>
+    </section>
+
+    <section id="features" class="features">
+
+      <div class="card">
+        <div class="icon">💬</div>
+        <h3>Real-time Chat</h3>
+        <p>
+          Send and receive messages instantly with other MyChat users.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🔎</div>
+        <h3>Find Users</h3>
+        <p>
+          Search for other users and start conversations easily.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🟢</div>
+        <h3>Online Status</h3>
+        <p>
+          See when your friends and contacts are online.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">✍️</div>
+        <h3>Typing Indicator</h3>
+        <p>
+          Know when another user is typing a message.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">📞</div>
+        <h3>Calling</h3>
+        <p>
+          MyChat is designed for communication beyond simple messaging.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="icon">🔐</div>
+        <h3>Secure Login</h3>
+        <p>
+          User accounts are protected with password hashing and authentication.
+        </p>
+      </div>
+
+    </section>
+
+  </div>
+
+  <footer>
+    © 2026 MyChat. All rights reserved.
+  </footer>
+
+</body>
+</html>

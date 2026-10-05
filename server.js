@@ -107,12 +107,7 @@ function publicUser(user) {
 ========================= */
 
 app.get("/", (req, res) => {
-  res.json({
-    success: true,
-    app: "MyChat",
-    message: "MyChat server is running",
-    version: "1.0.0"
-  });
+  res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
 app.get("/health", (req, res) => {
