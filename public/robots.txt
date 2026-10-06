@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mychat-74aa.onrender.com/sitemap.xml
